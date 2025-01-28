@@ -428,6 +428,7 @@
         document.querySelectorAll(`#court${court} input[type="text"]`).forEach(input => input.value = '');
         matchEnded[court] = false;
         stopTimer(court);
+        timers[court].elapsed = 0; // รีเซ็ตเวลาเป็น 0
         document.getElementById(`timer${court}`).textContent = '00:00';
     }
 
